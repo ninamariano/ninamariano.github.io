@@ -1,2 +1,2 @@
-# https://ninamariano.github.io/styles.html
+# https://ninamariano.github.io
 
