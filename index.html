@@ -3,6 +3,7 @@
     <head>
        <title> Repositorio Lavinia Mariano </title>
          <link rel="stylesheet" href="estilos.css">
+         
          <style type="text/css">
            body { 
               color: black;
@@ -10,21 +11,76 @@
            p {
               color: gray;
            }
+           ul{
+              list-style-image: url("icone.jpg");
+           }
+           ul li{
+              background-color:lightpink;
+           }
+           ol{
+              list-style-image:url("icone.jpg")
+           }
+           ol li{
+              background-color:lightpink
+           }
+           .figuras{
+               display: flex;
+               flex-direction: row;
+           }
+           .figuras figure img{
+               width: 100px;
+           }
+           .figuras figure{
+               margin: auto;
+           }
+           header{
+               background-image: url("prog.jpg");
+               background-size: 100%;
+               height: 300px;
+           }
+           header h1{
+               color: white;
+               position: relative;
+               top: 45%;
+               font-size: xx-large;
+           }
+           body h1{
+               margin: 0px;
+           }
+           a:link{
+               text-decoration: none;
+           }
+           a:visited{
+               color:black;
+           }
+           a:hover{
+               color:gray;
+           }
+           a:active{
+               color:lightcoral;
+           }
+           nav ul{
+               list-style-type: none;
+           }
+           nav li{
+               display:inline-block;
+               margin-right: 110px;
+               background-color: white;
+            }
 
-         </style> 
-	</head>
-	<body style= "margin-top: 30px; margin-left: 30px;">
-         <h1>Repositorio Lavinia Mariano - Programaçao na WEB</h1> 
-             <figure>
-              <img src="lavinia.jpg" alt="foto da programadora">  
-              <figcaption>Lavínia Silva Mariano</figcaption> 
-             </figure>
-         
-         <h2>Na página</h2>
-             <ul>
+        </style>
 
+	  </head>
+	<body >
+         <header>
+         <h1>Repositório Lavínia Mariano - Programaçao na WEB</h1> 
+         </header>   
+    
+         <h2>
+          <nav>
+            <ul>
               <li>
-                <a href="#Sobre mim">Sobre mim</a>
+                <a href="#Sobre mim">Sobre mim</a> 
               </li>
               <li>
                 <a href="#Sobre a página">Sobre a página</a>
@@ -38,10 +94,15 @@
               <li>
                 <a href="#Me encontre">Me encontre</a>
               </li>
-
+               
              </ul>
-
+            </nav>
+        </h2>
          <h2 id="Sobre mim">Sobre mim</h2>
+           <figure>
+            <img src="lavinia.jpg" alt="foto da programadora">  
+            <figcaption>Lavínia Silva Mariano</figcaption> 
+           </figure>
              <p>Me chamo Lavínia Mariano <br> Estudante do Ensino Médio no IFES <br> Cursando Técnico em Informática para Internet</p> 
          
          <h2 id="Sobre a página">Sobre a página</h2>
@@ -61,6 +122,29 @@
               <li>Malhar</li>
               
              </ul>
+
+             <section class="figuras">
+                 <figure>
+                 <img src="violao.jpg" alt="violão">
+                 </figure>
+
+                 <figure>
+                 <img src="microfone.jpg" alt="microfone">
+                 </figure>
+
+                 <figure>
+                 <img src="livros.jpg" alt="livros">
+                 </figure>
+
+                 <figure>
+                 <img src="sol.jpg" alt="sol">
+                 </figure>
+
+                 <figure>
+                 <img src="halter.jpg" alt="halter">
+                 </figure>
+
+             </section>
          
          <h2 id="Minha rotina">Minha rotina</h2>
              <ol>
@@ -71,7 +155,7 @@
               <li>Almoço e arrumo a cozinha</li>
               <li>Faço atividades e assisto aulas</li>
                   <ol>
-
+                  
                    <li>Segunda: Historia e ingles</li>
                    <li>Terça: Prog I e biologia</li>
                    <li>Quarta: Portugues, Geografia, Sociologia e Prog Web</li>
