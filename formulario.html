@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Pesquisa alunos IFES campus Serra</h1>
+        <p id="subtitulo">Complete suas informações</p>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+       </div>
+
+        <div class="campo">
+            <label><strong>Cidade</strong></label>
+            <label>
+                <input type="radio" name="devweb" id="Serra">Serra
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="Vitória">Vitória
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="Vila Velha">Vila Velha
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="Aracruz">Aracruz
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="Cariacica">Cariacica
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="Outra">Outra
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="Horas"><strong>Quantas horas você demora para chegar até o campus?</strong></label>
+            <select id="Horas">
+                <option selected disabled value="">Selecione</option>
+                <option>Menos de 30 minutos</option>
+                <option>Entre 0,5 e 1 hora</option>
+                <option>Entre 1 e 1,5 horas</option>
+                <option>Entre 1,5 e 2 horas</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Quais meios de transporte você utiliza para chegar ao campus?</strong></label><br><br>
+                <input  type="checkbox" id="Meio1" name="Meio1" value="Ônibus">
+                <label for="Meio1"></label>Ônibus
+                <input  type="checkbox" id="Meio2" name="Meio2" value="Carro">
+                <label for="Meio2"></label>Carro
+                <input  type="checkbox" id="Meio3" name="Meio3" value="Bicicleta">
+                <label for="Meio3"></label>Bicicleta
+                <input  type="checkbox" id="Meio4" name="Meio4" value="Moto">
+                <label for="Meio 4"></label>Moto
+                <input  type="checkbox" id="Meio5" name="Meio5" value="Andando">
+                <label for="Meio 5"></label>Andando
+
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Como você descreve sua experiência de locomoção até o campus?</strong></label>
+            <textarea rows="6" style="width: 26em;" id="experiencia"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
