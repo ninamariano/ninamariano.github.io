@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title> Repositorio Lavinia Mariano </title>
+       <title> 
+           Repositorio Lavinia Mariano 
+       </title>
+       <script src="tamanhotitulo.js"></script>
+
          <link rel="stylesheet" href="estilos.css">
          
          <style type="text/css">
@@ -38,11 +42,11 @@
                background-size: 100%;
                height: 300px;
            }
-           header h1{
+            h1{
                color: white;
                position: relative;
                top: 45%;
-               font-size: xx-large;
+               
            }
            body h1{
                margin: 0px;
@@ -66,17 +70,27 @@
                display:inline-block;
                margin-right: 110px;
                background-color: white;
-	       position: relative;
+               position: relative;
+            
             }
-
+          
         </style>
-
-	  </head>
-	<body >
+        <script>
+          function tamanho(size){
+            h1 = document.querySelector('h1');
+            h1.style.fontSize = size;
+          }
+        </script>
+    </head>
+	  <body>
          <header>
-         <h1>Repositório Lavínia Mariano - Programaçao na WEB</h1> 
-         </header>   
-    
+         <h1 style="font-size:xx-large;">
+           <button onclick="tamanho('x-large')">-</button>
+           <button onclick="tamanho('xxx-large')">+</button>
+           Repositório Lavínia Mariano - Programaçao na WEB
+         </h1> 
+         </header>
+
          <h2>
           <nav>
             <ul>
@@ -183,7 +197,8 @@
               </li>
 
              </ul>  
-       
+         
            
     </body>	
 </html>
+
